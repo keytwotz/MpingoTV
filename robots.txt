@@ -1,0 +1,23 @@
+# robots.txt for Sure Betting Tips - MPINGO TV
+# This file tells search engines which pages they can crawl
+
+User-agent: *
+Allow: /
+
+# Allow crawling of all pages
+Allow: /index.html
+Allow: /odds/
+Allow: /live_score/
+Allow: /css/
+Allow: /images/
+
+# Disallow crawling of sensitive files
+Disallow: /MpingoTV.apk
+Disallow: /.git/
+Disallow: /README.md
+
+# Sitemap location (add your sitemap URL when available)
+# Sitemap: https://surebettingtips.com/sitemap.xml
+
+# Crawl delay (optional - adjust as needed)
+Crawl-delay: 1 

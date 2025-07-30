@@ -1,0 +1,45 @@
+# ads.txt file for Sure Betting Tips - MPINGO TV
+# This file helps prevent unauthorized inventory sales and enables ad verification
+
+# Google AdSense
+google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+
+# Example Ad Networks (replace with actual publisher IDs)
+# Add your actual ad network relationships here
+
+# Google Ad Manager (if using)
+google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+
+# Facebook Audience Network (if using)
+facebook.com, 000000000000000, DIRECT, 9a4e75c3304c1671
+
+# Amazon Publisher Services (if using)
+amazon-adsystem.com, 0000000000000000, DIRECT, 3d86c5a5f3b8b9a2
+
+# Taboola (if using)
+taboola.com, 0000000000000000, DIRECT, 1a4e75c3304c1671
+
+# Outbrain (if using)
+outbrain.com, 0000000000000000, DIRECT, 2a4e75c3304c1671
+
+# Media.net (if using)
+media.net, 0000000000000000, DIRECT, 4a4e75c3304c1671
+
+# PropellerAds (if using)
+propellerads.com, 0000000000000000, DIRECT, 5a4e75c3304c1671
+
+# Adsterra (if using)
+adsterra.com, 0000000000000000, DIRECT, 6a4e75c3304c1671
+
+# PopAds (if using)
+popads.net, 0000000000000000, DIRECT, 7a4e75c3304c1671
+
+# AdCash (if using)
+adcash.com, 0000000000000000, DIRECT, 8a4e75c3304c1671
+
+# InfoLinks (if using)
+infolinks.com, 0000000000000000, DIRECT, 9a4e75c3304c1671
+
+# Comment: Replace all placeholder publisher IDs (0000000000000000) with your actual publisher IDs
+# Comment: Remove any ad networks you're not using
+# Comment: Add additional ad networks as needed for your monetization strategy 
