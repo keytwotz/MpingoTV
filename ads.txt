@@ -2,7 +2,7 @@
 # This file helps prevent unauthorized inventory sales and enables ad verification
 
 # Google AdSense
-google.com, pub-4690089323418332, DIRECT, f08c47fec0942fa0
+google.com, pub-5789918661977508, DIRECT, f08c47fec0942fa0
 
 # Example Ad Networks (replace with actual publisher IDs)
 # Add your actual ad network relationships here
