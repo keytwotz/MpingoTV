@@ -36,9 +36,62 @@
   
   <!-- AOS Animation Library -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <!--  Ads -->
-      <script>(function(d,z,s){s.src='https://'+d+'/401/'+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})('gizokraijaw.net',9419026,document.createElement('script'))</script>
+  <!-- Monetag Ads -->
+  <script>(function(d,z,s){s.src='https://'+d+'/401/'+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})('gizokraijaw.net',9419026,document.createElement('script'))</script>
   <meta name="google-adsense-account" content="ca-pub-6410566328319123">
+  
+  <!-- Ad Display Styles -->
+  <style>
+      /* Ensure ads are visible */
+      .ad-container {
+          position: relative;
+          z-index: 100;
+          margin: 20px 0;
+          text-align: center;
+          min-height: 90px;
+          background: rgba(255, 255, 255, 0.05);
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+      
+      /* Top banner ad */
+      .top-ad {
+          position: sticky;
+          top: 80px;
+          z-index: 999;
+          background: var(--card-bg);
+          border: 1px solid var(--border-color);
+          margin: 0;
+          border-radius: 0;
+      }
+      
+      /* Sidebar ads */
+      .sidebar-ad {
+          position: fixed;
+          right: 20px;
+          top: 50%;
+          transform: translateY(-50%);
+          z-index: 998;
+          width: 160px;
+          height: 600px;
+          background: var(--card-bg);
+          border: 1px solid var(--border-color);
+          border-radius: 10px;
+      }
+      
+      /* Mobile responsive */
+      @media (max-width: 768px) {
+          .sidebar-ad {
+              display: none;
+          }
+          .top-ad {
+              position: relative;
+              top: 0;
+          }
+      }
+  </style>
   <style>
     :root {
       --primary-color: #1a1a2e;
@@ -604,6 +657,11 @@
     </div>
   </header>
 
+  <!-- Top Banner Ad -->
+  <div class="ad-container top-ad" id="top-banner-ad">
+    <!-- Top banner ad will be loaded here -->
+  </div>
+
   <!-- Main Content -->
   <main class="container">
     <!-- Hero Section -->
@@ -647,9 +705,19 @@
       </div>
     </section>
 
+    <!-- Middle Banner Ad -->
+    <div class="ad-container" id="middle-banner-ad">
+      <!-- Middle banner ad will be loaded here -->
+    </div>
+
     <!-- Loading State -->
     <div id="loading" class="loading">
       <div class="spinner"></div>
+    </div>
+
+    <!-- Sidebar Ad -->
+    <div class="ad-container sidebar-ad" id="sidebar-ad">
+      <!-- Sidebar ad will be loaded here -->
     </div>
 
     <!-- Matches Grid -->
@@ -913,8 +981,58 @@
     renderMatches(sampleMatches);
     document.getElementById('loading').style.display = 'none';
   </script>
+  
   <!-- monetag banner ads -->
-    <script src="banner.js"></script>
+  <script src="../banner.js"></script>
+  
+  <!-- Ad Loading Script -->
+  <script>
+    // Function to load ads in specific containers
+    function loadAds() {
+      // Load top banner ad
+      if (document.getElementById('top-banner-ad')) {
+        try {
+          let topAd = document.createElement('script');
+          topAd.src = 'https://gizokraijaw.net/401/9419026';
+          document.getElementById('top-banner-ad').appendChild(topAd);
+        } catch(e) {
+          console.log('Top ad loading error:', e);
+        }
+      }
+      
+      // Load middle banner ad
+      if (document.getElementById('middle-banner-ad')) {
+        try {
+          let middleAd = document.createElement('script');
+          middleAd.src = 'https://gizokraijaw.net/401/9419026';
+          document.getElementById('middle-banner-ad').appendChild(middleAd);
+        } catch(e) {
+          console.log('Middle ad loading error:', e);
+        }
+      }
+      
+      // Load sidebar ad
+      if (document.getElementById('sidebar-ad')) {
+        try {
+          let sidebarAd = document.createElement('script');
+          sidebarAd.src = 'https://gizokraijaw.net/401/9419026';
+          document.getElementById('sidebar-ad').appendChild(sidebarAd);
+        } catch(e) {
+          console.log('Sidebar ad loading error:', e);
+        }
+      }
+    }
+    
+    // Load ads when page is ready
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', loadAds);
+    } else {
+      loadAds();
+    }
+    
+    // Also load ads after a delay to ensure Monetag is ready
+    setTimeout(loadAds, 2000);
+  </script>
 
 </body>
 
