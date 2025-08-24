@@ -112,9 +112,9 @@
             --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
             --gradient-hero: linear-gradient(135deg, #000428 0%, #004e92 100%);
-            --shadow-light: 0 4px 6px rgba(0, 0, 0, 0.1);
-            --shadow-medium: 0 8px 25px rgba(0, 0, 0, 0.15);
-            --shadow-heavy: 0 15px 35px rgba(0, 0, 0, 0.2);
+            --shadow-light: 0 2px 4px rgba(0, 0, 0, 0.05);
+            --shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --shadow-heavy: 0 6px 20px rgba(0, 0, 0, 0.1);
         }
 
         * {
@@ -269,12 +269,12 @@
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            box-shadow: var(--shadow-medium);
+            box-shadow: var(--shadow-light);
         }
 
         .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: var(--shadow-heavy);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-medium);
             color: white;
             text-decoration: none;
         }
@@ -297,7 +297,7 @@
         .btn-secondary:hover {
             background: var(--success-color);
             color: var(--primary-color);
-            transform: translateY(-3px);
+            transform: translateY(-2px);
             text-decoration: none;
         }
 
@@ -356,8 +356,8 @@
         }
 
         .feature-card:hover {
-            transform: translateY(-10px);
-            box-shadow: var(--shadow-heavy);
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-medium);
             border-color: var(--success-color);
         }
 
@@ -435,8 +435,8 @@
         }
 
         .screenshot:hover {
-            transform: scale(1.05);
-            box-shadow: var(--shadow-heavy);
+            transform: scale(1.02);
+            box-shadow: var(--shadow-medium);
             border-color: var(--success-color);
         }
 
@@ -514,7 +514,7 @@
             width: 60px;
             height: 60px;
             border-radius: 50px;
-            box-shadow: var(--shadow-heavy);
+            box-shadow: var(--shadow-medium);
             z-index: 20;
             overflow: hidden;
             transition: all 0.3s ease;
@@ -559,7 +559,7 @@
         .sticky-chat .chat-content {
             border-radius: 15px;
             background-color: var(--card-bg);
-            box-shadow: var(--shadow-heavy);
+            box-shadow: var(--shadow-medium);
             overflow: hidden;
             border: 1px solid var(--border-color);
             backdrop-filter: blur(10px);

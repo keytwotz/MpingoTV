@@ -108,9 +108,9 @@
       --card-hover: rgba(255, 255, 255, 0.1);
       --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-      --shadow-light: 0 4px 6px rgba(0, 0, 0, 0.1);
-      --shadow-medium: 0 8px 25px rgba(0, 0, 0, 0.15);
-      --shadow-heavy: 0 15px 35px rgba(0, 0, 0, 0.2);
+      --shadow-light: 0 2px 4px rgba(0, 0, 0, 0.05);
+      --shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.08);
+      --shadow-heavy: 0 6px 20px rgba(0, 0, 0, 0.1);
     }
 
     * {
@@ -314,8 +314,8 @@
     }
 
     .tip-card:hover {
-      transform: translateY(-5px);
-      box-shadow: var(--shadow-heavy);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-medium);
       border-color: var(--success-color);
     }
 
